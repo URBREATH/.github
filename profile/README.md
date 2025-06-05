@@ -35,4 +35,4 @@ Our goal is to make our cities more **livable and inclusive** and to establish a
 
 ## Contact and More Information
 
-*(Insert links to the project website, social media profiles, or relevant contact information here.)*
+**
