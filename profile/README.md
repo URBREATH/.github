@@ -28,8 +28,52 @@ Our goal is to make our cities more **livable and inclusive** and to establish a
 
 *(This section will be updated with a list of applications developed within the URBREATH project and links to their respective GitHub repositories.)*
 
-* **decidim**: Free Open-Source participatory democracy, citizen participation and open government for cities and organizations.
-  * *Repository*: [[Link to GitHub Repository]](https://github.com/URBREATH/decidim)
+* **3dcitydb-importer-exporter**: [[Link to repository]](https://github.com/URBREATH/3dcitydb-importer-exporter)
+
+* **Airflow**: Repository for workflow orchestration.
+    * *Repositories*: [airflow](https://github.com/URBREATH/airflow) and [airflow-dags](https://github.com/URBREATH/airflow-dags)
+
+* **context.Orion-LD**: [[Link to repository]](https://github.com/URBREATH/context.Orion-LD)
+
+* **Decidim**: Free Open-Source participatory democracy, citizen participation and open government for cities and organizations.
+    * *Main Repository*: [[Link to GitHub Repository]](https://github.com/URBREATH/decidim)
+
+* **Decidim Modules**: Extensions created for the Decidim platform.
+    * [decidim-module-apiauth](https://github.com/URBREATH/decidim-module-apiauth)
+    * [decidim-module-idra](https://github.com/URBREATH/decidim-module-idra)
+    * [decidim-module-iframe](https://github.com/URBREATH/decidim-module-iframe)
+    * [decidim-module-keycloak](https://github.com/URBREATH/decidim-module-keycloak)
+    * [decidim-module-nbs_stories](https://github.com/URBREATH/decidim-module-nbs_stories)
+    * [decidim-module-urbreath-ui](https://github.com/URBREATH/decidim-module-urbreath-ui)
+    * [decidim-module-whiteboard](https://github.com/URBREATH/decidim-module-whiteboard)
+
+* **docker-geonetwork**: [[Link to repository]](https://github.com/URBREATH/docker-geonetwork)
+
+* **e-participation-mobile-app**: [[Link to repository]](https://github.com/URBREATH/e-participation-mobile-app)
+
+* **FROST-Server**: [[Link to repository]](https://github.com/URBREATH/FROST-Server)
+
+* **GeoCacher**: Components for caching and visualization of geospatial data.
+    * *Frontend*: [GeoCacher-frontend](https://github.com/URBREATH/GeoCacher-frontend)
+    * *Backend*: [GeoCacher-backend](https://github.com/URBREATH/GeoCacher-backend)
+
+* **geoserver**: [[Link to repository]](https://github.com/URBREATH/geoserver)
+
+* **Idra**: [[Link to repository]](https://github.com/URBREATH/Idra)
+
+* **IdraPortal-ngx**: [[Link to repository]](https://github.com/URBREATH/IdraPortal-ngx)
+
+* **minio**: [[Link to repository]](https://github.com/URBREATH/minio)
+
+* **NatureValueExplorer**: [[Link to repository]](https://github.com/URBREATH/NatureValueExplorer)
+
+* **Superset**: [[Link to repository]](https://github.com/URBREATH/Superset)
+
+* **user-manager**: [[Link to repository]](https://github.com/URBREATH/user-manager)
+
+* **Virtual City Map**: Components for virtual map visualization.
+    * *Core*: [vc-map-core](https://github.com/URBREATH/vc-map-core)
+    * *UI*: [vc-map-ui](https://github.com/URBREATH/vc-map-ui)
 
 ---
 
