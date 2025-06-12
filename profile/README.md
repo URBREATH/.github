@@ -35,4 +35,5 @@ Our goal is to make our cities more **livable and inclusive** and to establish a
 
 ## Contact and More Information
 
-**
+**email**: info@urbreath.eu
+**site**: https://urbreath.eu/
