@@ -23,61 +23,146 @@ We aim to transform our cities from the ground up, making them not only **sustai
 Our goal is to make our cities more **livable and inclusive** and to establish a **model for urban areas** to play a central role in addressing climate change, transforming our vulnerability into a powerful defense.
 
 ---
+## The URBREATH Toolbox
+The URBREATH Toolbox is designed to provide support functionalities for collaborative projects focused on Nature Based Solutions, that require the interactions between interdisciplinary experts and heterogeneous stakeholders. To enable effective collaboration among them, the URBREATH Toolbox provides a unified framework that facilitates coordination, data integration, and sustainable project outcomes. The logical architecture of the URBREATH Toolbox is built around the following key characteristics:
+* Promotion of cross-disciplinary collaboration 
+* Centralise discovery and access to heterogeneous and scattered data. 
+* Adaptiveness and flexibility, to allow the reuse of the toolbox over time for different projects. 
+* Facilitate stakeholder engagement and communication, ensuring that local voices are heard and that projects meet local needs 
+* Ability to perform simulation and analysis, enabling stakeholders to model and compare different scenarios of interventions and assess the potential impacts of NBS projects. 
+* Define, track, and report on key performance indicators. 
+* Ability to perform data visualisation, transforming complex data into understandable visual representations such as charts, graphs, and 2D/3D maps.
 
-## Released Applications and Repositories
+The URBREATH Toolbox leverages a logical architecture organised in ten macro areas covering the main functional needs of the platform:
+* **Data Discovery and Sharing** provides a unified access point to discover datasets, tools, models, data sources and other resources managed through the URBREATH Toolbox
+* **City Data Visualisation** includes user interfaces for data visualisation and interaction with toolbox components
+* **City Monitoring** supports the monitoring of city parameters and KPIs
+* **Data Analysis and Processing** covers analytics and simulations tailored to the needs of the URBREATH pilots
+* **NBS Planning** supports decision makers and planners in designing and planning Nature-Based Solutions
+* **E-Participation** enables stakeholder engagement and participatory processes for planning, monitoring and evaluating interventions
+* **Data Management** supports the collection and management of heterogeneous data sources and interoperability with data spaces
+* **Components Communication** enables communication among the different components of the toolbox
+* **Process Orchestration** supports the definition, execution and orchestration of complex workflows involving multiple components
+* **Security** manages users, roles, permissions, authentication and authorisation
+ 
 
-*(This section will be updated with a list of applications developed within the URBREATH project and links to their respective GitHub repositories.)*
+The tools developed within the project are listed below under the macro area they are mapped to, together with their descriptions and corresponding repositories.
+This information is continuously updated as development progresses.
+### Data Discovery and Sharing
+**GeoNetwork**
 
-* **3dcitydb-importer-exporter**: [[Link to repository]](https://github.com/URBREATH/3dcitydb-importer-exporter)
+GeoNetwork is a catalog application to manage spatially referenced resources. It provides powerful metadata editing and search functions as well as an interactive web map viewer.
 
-* **Airflow**: Repository for workflow orchestration.
-    * *Repositories*: [airflow](https://github.com/URBREATH/airflow) and [airflow-dags](https://github.com/URBREATH/airflow-dags)
+[Repository of the official Docker image](https://github.com/URBREATH/docker-geonetwork)
 
-* **context.Orion-LD**: [[Link to repository]](https://github.com/URBREATH/context.Orion-LD)
+**Urbreath Catalogue (Idra)**
 
-* **Decidim**: Free Open-Source participatory democracy, citizen participation and open government for cities and organizations.
-    * *Main Repository*: [[Link to GitHub Repository]](https://github.com/URBREATH/decidim)
+Idra is a web application able to federate existing Open Data Management Systems (ODMS) based on different technologies providing a unique access point to search and discover open datasets coming from heterogeneous sources. Idra uniforms representation of collected open datasets, thanks to the adoption of international standards (DCAT-AP) and provides a set of RESTful APIs to be used by third party applications.
+Idra supports natively ODMS based on CKAN, DKAN, Socrata, Orion Context Broker (NGSI v2, NGSI-LD) and many other technologies: Idra provides also a set of APIs to federate ODMS not natively supported. In addition, it is possible to federate generic open data portals, that don't expose API, using the web scraping functionality or providing a dump file of the datasets in DCAT-AP format. Furthermore, Idra provides a SPARQL endpoint in order to perform queries on 5 stars RDF linked open data collected from federated ODMS and allows to easily create charts based on federated open datasets (through DatalEt-Ecosystem Provider DEEP )
 
-* **Decidim Modules**: Extensions created for the Decidim platform.
-    * [decidim-module-apiauth](https://github.com/URBREATH/decidim-module-apiauth)
-    * [decidim-module-idra](https://github.com/URBREATH/decidim-module-idra)
-    * [decidim-module-iframe](https://github.com/URBREATH/decidim-module-iframe)
-    * [decidim-module-keycloak](https://github.com/URBREATH/decidim-module-keycloak)
-    * [decidim-module-nbs_stories](https://github.com/URBREATH/decidim-module-nbs_stories)
-    * [decidim-module-urbreath-ui](https://github.com/URBREATH/decidim-module-urbreath-ui)
-    * [decidim-module-whiteboard](https://github.com/URBREATH/decidim-module-whiteboard)
+Repositories:
+* [Idra](https://github.com/URBREATH/Idra)
+* [UI Template](https://github.com/URBREATH/IdraPortal-ngx)
 
-* **docker-geonetwork**: [[Link to repository]](https://github.com/URBREATH/docker-geonetwork)
+### City Data Visualisation
+**3D City Database Importer/Exporter**
 
-* **e-participation-mobile-app**: [[Link to repository]](https://github.com/URBREATH/e-participation-mobile-app)
+The 3D City Database Importer/Exporter is a Java based client for the 3D City Database. It allows for high-performance loading and extracting 3D city model data.
+The 3D City Database Importer/Exporter comes with both a Graphical User Interface (GUI) and a Command Line Interface (CLI). The CLI allows for employing the tool in batch processing workflows and third-party applications.
 
-* **FROST-Server**: [[Link to repository]](https://github.com/URBREATH/FROST-Server)
+[Repository](https://github.com/URBREATH/3dcitydb-importer-exporter)
 
-* **GeoCacher**: Components for caching and visualization of geospatial data.
-    * *Frontend*: [GeoCacher-frontend](https://github.com/URBREATH/GeoCacher-frontend)
-    * *Backend*: [GeoCacher-backend](https://github.com/URBREATH/GeoCacher-backend)
+**GeoCacher**
 
-* **geoserver**: [[Link to repository]](https://github.com/URBREATH/geoserver)
+GeoCacher is a backend service designed to support a graphical dashboard for visualizing geospatial data. Its primary purpose is to interface with a FIWARE ORION Context Broker to extract and temporarily store (cache) data.
+GeoCacher allows to retrieve filters and geospatial data from the ORION Context Broker, support CRUD (Create, Read, Update, Delete) operations to save and manage user searches on a supporting MongoDB database and upload and display custom GeoJSON files on the dashboard.
 
-* **Idra**: [[Link to repository]](https://github.com/URBREATH/Idra)
+Repositories: 
+* [Frontend](https://github.com/URBREATH/GeoCacher-frontend)
+* [Backend](https://github.com/URBREATH/GeoCacher-backend)
 
-* **IdraPortal-ngx**: [[Link to repository]](https://github.com/URBREATH/IdraPortal-ngx)
+**Data Visualisation and Dashboards (Apache Superset)**
 
-* **minio**: [[Link to repository]](https://github.com/URBREATH/minio)
+This data visualization tool is built on top of Apache Superset. The dashboard allows users to explore, analyse, and monitor data in real time through an interactive and customizable interface. It offers dynamic and interactive visualizations, advanced filters for targeted analysis, and a scalable, modular architecture powered by Apache Superset. The tool is configurable with multiple levels of access and security and provides a web-based, user-friendly interface. The main goal of the project is to provide a ready-to-use solution for building business dashboards that enable organizations to make data-driven decisions with ease.
 
-* **NatureValueExplorer**: [[Link to repository]](https://github.com/URBREATH/NatureValueExplorer)
+[Repository](https://github.com/URBREATH/Superset)
 
-* **Superset**: [[Link to repository]](https://github.com/URBREATH/Superset)
+**Virtual city Map**
 
-* **user-manager**: [[Link to repository]](https://github.com/URBREATH/user-manager)
+VC Map is an Open-Source JavaScript framework and API for building dynamic and interactive maps on the web. It can display 2D data, oblique imagery and massive 3D data including terrain data, vector data, mesh models, and point clouds making it easy for users to explore and interact with the data in an integrated and high-performance map application. VC Map apps can be rendered in all modern web browsers and on both desktop and mobile devices, bringing the map to where the user is. VC Map is built upon open, proven, and reliable GIS and web technologies such as OpenLayers and Cesium for the visualization of 2D and 3D geo-data.
 
-* **Virtual City Map**: Components for virtual map visualization.
-    * *Core*: [vc-map-core](https://github.com/URBREATH/vc-map-core)
-    * *UI*: [vc-map-ui](https://github.com/URBREATH/vc-map-ui)
+Repositories:
+* [Core](https://github.com/URBREATH/vc-map-core)
+* [UI](https://github.com/URBREATH/vc-map-ui)
+### City Monitoring
+### Data Analysis and Processing
+### NBS Planning
+**Nature Value Explorer**
+
+The Nature Value Explorer focuses on pragmatic methods that value ecosystem services and helps planners, land managers and policy makers to map nature's socio-economic importance.
+
+[Repository](https://github.com/URBREATH/NatureValueExplorer)
+### E-Participation
+**Web app (Decidim)**
+
+Decidim is a participatory democracy framework, written in Ruby on Rails, originally developed for the Barcelona City government online and offline participation website. Installing these libraries will provide you a generator and gems to help you develop web applications like the ones found on example applications or like our demo application.
+
+[Repository](https://github.com/URBREATH/decidim)
+
+Decidim Modules Extensions:
+* [decidim-module-apiauth](https://github.com/URBREATH/decidim-module-apiauth)
+* [decidim-module-idra](https://github.com/URBREATH/decidim-module-idra)
+* [decidim-module-iframe](https://github.com/URBREATH/decidim-module-iframe)
+* [decidim-module-keycloak](https://github.com/URBREATH/decidim-module-keycloak)
+* [decidim-module-nbs_stories](https://github.com/URBREATH/decidim-module-nbs_stories)
+* [decidim-module-urbreath-ui](https://github.com/URBREATH/decidim-module-urbreath-ui)
+* [decidim-module-whiteboard](https://github.com/URBREATH/decidim-module-whiteboard)
+
+**Mobile app**
+
+The e-participation mobile app is a native app (works on iPhones and Android phones) that lets regular citizens participate in decisions about green spaces, urban nature, and environmental improvements in their city. It includes a city suggestion box, a neighborhood forum, and a project tracker focused on nature and the environment.
+
+[Repository](https://github.com/URBREATH/e-participation-mobile-app)
+### Data Management
+**FROST Server**
+
+The FRaunhofer Opensource SensorThings-Server is the first complete, open-source official reference implementation of the OGC SensorThings API. Depending on specific requirements, plugins allow to extend and even replace the data model.
+
+[Repository](https://github.com/URBREATH/FROST-Server)
+
+**GeoServer**
+
+GeoServer is an open-source software server written in Java that allows users to share and edit geospatial data. Designed for interoperability, it publishes data from any major spatial data source using open standards.
+GeoServer is the reference implementation of the Open Geospatial Consortium (OGC) Web Feature Service (WFS) and Web Coverage Service (WCS) standards, as well as a high performance certified compliant Web Map Service (WMS), compliant Catalog Service for the Web (CSW) and implementing Web Processing Service (WPS). GeoServer forms a core component of the Geospatial Web.
+
+[Repository](https://github.com/URBREATH/geoserver)
+
+**Object Storage (MinIO)**
+
+MinIO is a High Performance Object Storage released under GNU Affero General Public License v3.0. It is API compatible with Amazon S3 cloud storage service. Use MinIO to build high performance infrastructure for machine learning, analytics and application data workloads.
+
+[Repository](https://github.com/URBREATH/minio)
+### Components Communication
+**Orion-LD**
+
+Orion-LD is a Context Broker and CEF building block for context data management, implementting both the NGSI-LD API and the NGSIv2 API. It is currently a fork of the original Orion Context Broker extending support to add NGSI-LD and linked data concepts. Orion-LD follows the ETSI specification for NGSI-LD and has been tested to be a stable and fast NGSI-LD broker with near compliance to the version 1.6.1 of the NGSI-LD API specification (and some features from newer releases).
+
+[Repository](https://github.com/URBREATH/context.Orion-LD)
+### Process Orchestration
+**Apache Airflow**
+
+Apache Airflow (or simply Airflow) is a platform to programmatically author, schedule, and monitor workflows.
+Airflow allows to author workflows as directed acyclic graphs (DAGs) of tasks. The Airflow scheduler executes the tasks on an array of workers while following the specified dependencies. Rich command line utilities make performing complex surgeries on DAGs a snap. The rich user interface makes it easy to visualize pipelines running in production, monitor progress, and troubleshoot issues when needed.
+
+Repositories: 
+* [airflow](https://github.com/URBREATH/airflow)
+* [airflow-dags](https://github.com/URBREATH/airflow-dags)
+### Security
+**User Manager**
+
+User manager is responsible to handle authentication process inside Urbreath. It connects with Keycloak and routes all requests to authenticate users, refresh tokens, manage users and request information regarding their authorization in the system.
+It exploits OAuth2.0 and OpenID protocols integrated with Spring Security with configured Request Filters to increase the security of the application and generate JWT Tokens for users.
+
+[Repository](https://github.com/URBREATH/user-manager)
 
 ---
-
-## Contact and More Information
-
-**email**: info@urbreath.eu
-**site**: https://urbreath.eu/
