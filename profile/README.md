@@ -62,7 +62,7 @@ Idra supports natively ODMS based on CKAN, DKAN, Socrata, Orion Context Broker (
 
 Repositories:
 * [Idra](https://github.com/URBREATH/Idra)
-* [UI Template](https://github.com/URBREATH/IdraPortal-ngx)
+* [IdraPortal-ngx](https://github.com/URBREATH/IdraPortal-ngx)
 
 ### City Data Visualisation
 **3D City Database Importer/Exporter**
