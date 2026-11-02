@@ -45,7 +45,7 @@ The URBREATH Toolbox leverages a logical architecture organised in ten macro are
 * **Process Orchestration** supports the definition, execution and orchestration of complex workflows involving multiple components
 * **Security** manages users, roles, permissions, authentication and authorisation
   
-![Logical architecture of the URBREATH Toolbox](images/urbreath-toolbox-logical-architecture.png) 
+![Logical architecture of the URBREATH Toolbox](images/urbreath-toolbox-logical-architectur.png) 
 
 The tools developed within the project are listed below under the macro area they are mapped to, together with their descriptions and corresponding repositories.
 This information is continuously updated as development progresses.
