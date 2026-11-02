@@ -73,7 +73,7 @@ The 3D City Database Importer/Exporter comes with both a Graphical User Interfac
 
 [Repository](https://github.com/URBREATH/3dcitydb-importer-exporter)
 
-**GeoCacher**
+**Map Layers Manager (GeoCacher)**
 
 GeoCacher is a backend service designed to support a graphical dashboard for visualizing geospatial data. Its primary purpose is to interface with a FIWARE ORION Context Broker to extract and temporarily store (cache) data.
 GeoCacher allows to retrieve filters and geospatial data from the ORION Context Broker, support CRUD (Create, Read, Update, Delete) operations to save and manage user searches on a supporting MongoDB database and upload and display custom GeoJSON files on the dashboard.
@@ -88,7 +88,7 @@ This data visualization tool is built on top of Apache Superset. The dashboard a
 
 [Repository](https://github.com/URBREATH/Superset)
 
-**Virtual city Map**
+**3D Map (VC Map)**
 
 VC Map is an Open-Source JavaScript framework and API for building dynamic and interactive maps on the web. It can display 2D data, oblique imagery and massive 3D data including terrain data, vector data, mesh models, and point clouds making it easy for users to explore and interact with the data in an integrated and high-performance map application. VC Map apps can be rendered in all modern web browsers and on both desktop and mobile devices, bringing the map to where the user is. VC Map is built upon open, proven, and reliable GIS and web technologies such as OpenLayers and Cesium for the visualization of 2D and 3D geo-data.
 
@@ -96,7 +96,53 @@ Repositories:
 * [Core](https://github.com/URBREATH/vc-map-core)
 * [UI](https://github.com/URBREATH/vc-map-ui)
 ### City Monitoring
+**KPI Manager**
+
+The KPI Manager is a web-based application for defining, calculating, monitoring, and visualising Key Performance Indicators (KPIs).
+It provides a centralised environment for collecting and processing KPI-related data from different sources and presenting the resulting indicators through interactive dashboards and visualisations.
+The application allows users to configure KPIs according to specific business or project requirements, define their calculation logic, associate them with relevant measures, and monitor their evolution over time.
+
+[Repository](https://github.com/URBREATH/KPI-Manager)
 ### Data Analysis and Processing
+**Heat Stress Analysis**
+
+Heat Stress is a geospatial analysis tool that quantifies and simulates Land Surface Temperature (LST) to support climate resilient urban planning.
+
+[Repository](https://github.com/URBREATH/Impact-of-NBS-on-Heat-Stress)
+
+**Urban Heat Islands**
+
+The Urban Heat Island (UHI) algorithm identifies and monitors areas within cities that are significantly warmer than their surrounding rural zones.
+
+[Repository](https://github.com/URBREATH/Urban-Heat-Islands)
+
+**Shadow Modelling (Shadowmap)**
+
+Shadowmap analyses the temporal shading of a selected area in a Cesium 3D scene. For a selected date, it samples the scene between estimated sunrise and sunset and reports the proportion of shaded and unshaded pixels within a polygon. 
+
+[Repository](https://github.com/URBREATH/shadow-map-analysis)
+
+**Infiltration Model** 
+
+The NBS Infiltration Model provides infiltration analysis for various nature-based solutions in the Leuven area, including rain gardens, bioswales, permeable pavement, green roofs, constructed wetlands, urban forests, and infiltration trenches.
+
+[Repository](https://github.com/URBREATH/infiltration-model)
+
+**Biotope Area Factor**
+
+The Biotope Area Factor (BAF) Calculator evaluates the ecological quality of selected planning areas. It calculates polygon areas, weighted biotope areas, and the resulting BAF; groups results by surface type; and presents them in a result table.
+
+[Repository](https://github.com/URBREATH/small-scale-baf)
+
+**3-30-300 Analysis**
+
+This viewer provides a simple, people-centered way to explore and analyse urban greenery directly on a map following the 3-30-300 rule:
+*	At least 3 trees visible from every home
+*	At least 30% tree canopy or vegetation cover in every neighbourhood 
+*	A maximum distance of 300 meters to the nearest green space
+
+[Repository](https://github.com/URBREATH/vito_3-30-300)
+
 ### NBS Planning
 **Nature Value Explorer**
 
@@ -144,13 +190,13 @@ MinIO is a High Performance Object Storage released under GNU Affero General Pub
 
 [Repository](https://github.com/URBREATH/minio)
 ### Components Communication
-**Orion-LD**
+**Context Broker (Orion-LD)**
 
 Orion-LD is a Context Broker and CEF building block for context data management, implementting both the NGSI-LD API and the NGSIv2 API. It is currently a fork of the original Orion Context Broker extending support to add NGSI-LD and linked data concepts. Orion-LD follows the ETSI specification for NGSI-LD and has been tested to be a stable and fast NGSI-LD broker with near compliance to the version 1.6.1 of the NGSI-LD API specification (and some features from newer releases).
 
 [Repository](https://github.com/URBREATH/context.Orion-LD)
 ### Process Orchestration
-**Apache Airflow**
+**Workflow Management and Execution (Apache Airflow)**
 
 Apache Airflow (or simply Airflow) is a platform to programmatically author, schedule, and monitor workflows.
 Airflow allows to author workflows as directed acyclic graphs (DAGs) of tasks. The Airflow scheduler executes the tasks on an array of workers while following the specified dependencies. Rich command line utilities make performing complex surgeries on DAGs a snap. The rich user interface makes it easy to visualize pipelines running in production, monitor progress, and troubleshoot issues when needed.
