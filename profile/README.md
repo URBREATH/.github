@@ -227,6 +227,12 @@ This tool analyses the relationship between Nature-based Solutions (NbS) and soc
 The Nature Value Explorer focuses on pragmatic methods that value ecosystem services and helps planners, land managers and policy makers to map nature's socio-economic importance.
 
 [Repository](https://github.com/URBREATH/NatureValueExplorer)
+
+**NBS Registry**
+
+NBS registry is a Spring Boot application service that manages Natured-Based Solutions (NBS) for the URBREATH project.
+
+[Repository](https://github.com/URBREATH/nbs-registry)
 ### E-Participation
 **Web app (Decidim)**
 
@@ -267,12 +273,24 @@ GeoServer is the reference implementation of the Open Geospatial Consortium (OGC
 MinIO is a High Performance Object Storage released under GNU Affero General Public License v3.0. It is API compatible with Amazon S3 cloud storage service. Use MinIO to build high performance infrastructure for machine learning, analytics and application data workloads.
 
 [Repository](https://github.com/URBREATH/minio)
+
+**Data Spaces Connector (TRUE Connector)**
+
+The TRUE (TRUsted Engineering) Connector for the IDS (International Data Space) ecosystem is an open-source solution designed to enable self-determined data sharing while ensuring compliance with regulations such as GDPR.
+
+[Repository](https://github.com/true-connector)
 ### Components Communication
 **Context Broker (Orion-LD)**
 
 Orion-LD is a Context Broker and CEF building block for context data management, implementting both the NGSI-LD API and the NGSIv2 API. It is currently a fork of the original Orion Context Broker extending support to add NGSI-LD and linked data concepts. Orion-LD follows the ETSI specification for NGSI-LD and has been tested to be a stable and fast NGSI-LD broker with near compliance to the version 1.6.1 of the NGSI-LD API specification (and some features from newer releases).
 
 [Repository](https://github.com/URBREATH/context.Orion-LD)
+
+**Message Broker (Apache Kafka)**
+
+Apache Kafka is an open-source distributed event streaming platform for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+
+[Repository](https://github.com/URBREATH/kafka)
 ### Process Orchestration
 **Workflow Management and Execution (Apache Airflow)**
 
@@ -282,6 +300,18 @@ Airflow allows to author workflows as directed acyclic graphs (DAGs) of tasks. T
 Repositories: 
 * [airflow](https://github.com/URBREATH/airflow)
 * [airflow-dags](https://github.com/URBREATH/airflow-dags)
+
+**Data Model Mapper**
+
+The Data Model Mapper tool enables to convert several file types (e.g. CSV, Json, GeoJson) to the different Data Models defined in the SynchroniCity Project. The files in input can contain either rows, JSON objects or GeoJson Features, each of them representing an object to be mapped to an NGSI entity, according to the selected Data Model.
+
+[Repository](https://github.com/URBREATH/data-model-mapper)
+
+**Analyses Management (Kitsune)**
+
+Kitsune is the middleware integration layer developed within the URBREATH project. It acts as the backbone between front-end clients, OGC-compliant analysis engines, and long-term storage services.
+
+[Repository](https://github.com/URBREATH/kitsune)
 ### Security
 **User Manager**
 
@@ -289,5 +319,11 @@ User manager is responsible to handle authentication process inside Urbreath. It
 It exploits OAuth2.0 and OpenID protocols integrated with Spring Security with configured Request Filters to increase the security of the application and generate JWT Tokens for users.
 
 [Repository](https://github.com/URBREATH/user-manager)
+
+**Keycloak**
+
+Open Source Identity and Access Management For Modern Applications and Services.
+
+[Repository](https://github.com/URBREATH/keycloak)
 
 ---
