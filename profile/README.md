@@ -143,6 +143,84 @@ This viewer provides a simple, people-centered way to explore and analyse urban 
 
 [Repository](https://github.com/URBREATH/vito_3-30-300)
 
+**Public transport accessibility**
+
+The Public Transport Accessibility Tool (PTAT)  measures how well residents can access the public transport network and reach destinations across the city using direct transit services.
+
+[Repository](https://github.com/URBREATH/iccs-ptat)
+
+**15 minutes city**
+
+The 15-Minute City tool is designed to assign a proximity index to urban services within a defined geographic area. It evaluates how easily residents can access Points of Interest (PoIs) on foot or by bicycle, following the “15-minute city” model envisioning that most daily needs should be met within a 15-minute walk or bike ride from home.
+
+[Repository](https://github.com/URBREATH/15-minutes-city)
+
+**Visual Interpretable and Explainable AI (VIE-AI)**
+
+The VIE-AI Dashboard provides interactive explainable AI interfaces for multiple models, including flooding prediction, classification, temperature anomalies, and infiltration modeling.
+
+[Repository](https://github.com/URBREATH/vie-ai)
+
+**Tree Growing prediction (Growing Trees)**
+
+Growing Trees simulates the year-by-year growth of georeferenced urban trees and evaluating canopy development, ecosystem services, and 3-30-300 metrics. 
+
+[Repository](https://github.com/URBREATH/growingTrees)
+
+**Climate projections**
+
+This tool provides long-term daily climate series based on AR6-IPCC scenarios to guide the strategic design of Nature-based Solutions (NBS) through the end of the century. Uncertainties can be evaluated in order to make optimised decisions. 
+
+[Repository](https://github.com/URBREATH/Climate-projections)
+
+**Seasonal forecast**
+
+This tool provides monthly probabilistic forecasts for the next six months, allowing cities to anticipate deviations from average weather conditions and adjust medium-term planning. 
+
+[Repository](https://github.com/URBREATH/Seasonal-forecasts)
+
+**Short term weather forecast**
+
+This tool provides high-resolution, short-term predictions for the next 10 days, allowing cities to manage daily operations and execute immediate responses to upcoming weather events. 
+
+[Repository](https://github.com/URBREATH/Weather-forecasts)
+
+**Livability index**
+
+The URBREATH Livability Index collects, scores, and visualizes citizen survey data about urban public spaces.  
+
+[Repository](https://github.com/URBREATH/Livability-Index)
+
+**Small-scale waterflow analysis**
+
+Small Scale Waterflow Analysis, also known as Terrain Analysis, explores terrain-based water flow. It samples active Cesium terrain, calculates downhill flow and flow accumulation, and displays the results in the map.  
+
+[Repository](https://github.com/URBREATH/vc-small-scale-waterflow-analysis)
+
+**Snow pile**
+
+The Snow Pile Analysis simulates, visualizes, and analyzes snow pile melting using environmental parameters and historical weather data. Results include meltwater and weather charts, PDF reports, and CSV data exports.  
+
+[Repository](https://github.com/URBREATH/vc-snow-pile-sim)
+
+**Optimal snow deposit location**
+
+This tool Computes the optimal placement of k snow deposit sites for a city, given a total snow volume V and a set of candidate deposit locations. Each road segment is assigned to its nearest open deposit, subject to capacity constraints.  
+
+[Repository](https://github.com/URBREATH/iccs-osdl)
+
+**Crime statistics**
+
+Analytics tool for the impact of Nature-based Solutions (NbS) on urban crime.  
+
+[Repository](https://github.com/URBREATH/iccs-cs)
+
+**Green gentrification**
+
+This tool analyses the relationship between Nature-based Solutions (NbS) and socio-economic change across Leuven's 118 statistical sectors.
+
+[Repository](https://github.com/URBREATH/iccs-gg)
+
 ### NBS Planning
 **Nature Value Explorer**
 
